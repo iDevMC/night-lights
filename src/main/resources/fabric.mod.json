@@ -11,17 +11,18 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/iDevMC/night-lights"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/night-lights/icon.png",
+	"license": "LGPL-2.1",
+	"icon": "assets/nightlights/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.samgj15.nightlights.NightLights"
+			"com.samgj15.nightlights.Nightlight"
 		],
+		
 		"fabric-datagen": [
-			"com.samgj15.nightlights.NightLightsDataGenerator"
+			"com.samgj15.nightlights.NightlightDataGenerator"
 		]
 	},
 	"mixins": [
