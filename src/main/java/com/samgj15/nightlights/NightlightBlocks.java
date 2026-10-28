@@ -124,6 +124,7 @@ public class NightlightBlocks {
 	public static final Block FAIRY_LIGHTS_RED = makeCeiling(NightlightKeys.FAIRY_LIGHTS_RED);
 	public static final Block FAIRY_LIGHTS_WHITE = makeCeiling(NightlightKeys.FAIRY_LIGHTS_WHITE);
 	public static final Block FAIRY_LIGHTS_YELLOW = makeCeiling(NightlightKeys.FAIRY_LIGHTS_YELLOW);
+	public static final Block FAIRY_LIGHTS_DEFAULT = makeCeiling(NightlightKeys.FAIRY_LIGHTS_DEFAULT);
 	
 	public static final Block HANGING_LIGHTS_BLACK = makeCeiling(NightlightKeys.HANGING_LIGHTS_BLACK);
 	public static final Block HANGING_LIGHTS_BLUE = makeCeiling(NightlightKeys.HANGING_LIGHTS_BLUE);
@@ -141,6 +142,7 @@ public class NightlightBlocks {
 	public static final Block HANGING_LIGHTS_RED = makeCeiling(NightlightKeys.HANGING_LIGHTS_RED);
 	public static final Block HANGING_LIGHTS_WHITE = makeCeiling(NightlightKeys.HANGING_LIGHTS_WHITE);
 	public static final Block HANGING_LIGHTS_YELLOW = makeCeiling(NightlightKeys.HANGING_LIGHTS_YELLOW);
+	public static final Block HANGING_LIGHTS_DEFAULT = makeCeiling(NightlightKeys.HANGING_LIGHTS_DEFAULT);
 
 	private static final Block makeNightlightBlock(BlockItemId key, Block parent) {
 		var block = register(key, NightlightBlock::new, BlockBehaviour.Properties.ofFullCopy(parent));

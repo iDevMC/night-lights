@@ -67,6 +67,7 @@ public class NightlightKeys {
 	public static final BlockItemId FAIRY_LIGHTS_RED = create("fairy_lights_red");
 	public static final BlockItemId FAIRY_LIGHTS_WHITE = create("fairy_lights_white");
 	public static final BlockItemId FAIRY_LIGHTS_YELLOW = create("fairy_lights_yellow");
+	public static final BlockItemId FAIRY_LIGHTS_DEFAULT = create("fairy_lights_default");
 
 	public static final BlockItemId HANGING_LIGHTS_BLACK = create("hanging_lights_black");
 	public static final BlockItemId HANGING_LIGHTS_BLUE = create("hanging_lights_blue");
@@ -84,6 +85,7 @@ public class NightlightKeys {
 	public static final BlockItemId HANGING_LIGHTS_RED = create("hanging_lights_red");
 	public static final BlockItemId HANGING_LIGHTS_WHITE = create("hanging_lights_white");
 	public static final BlockItemId HANGING_LIGHTS_YELLOW = create("hanging_lights_yellow");
+	public static final BlockItemId HANGING_LIGHTS_DEFAULT = create("hanging_lights_default");
 
 	public static final BlockItemId OCTOPUS_BLACK = create("octopus_black");
 	public static final BlockItemId OCTOPUS_BLUE = create("octopus_blue");
