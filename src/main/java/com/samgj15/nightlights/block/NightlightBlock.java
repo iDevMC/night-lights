@@ -7,6 +7,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -32,15 +33,13 @@ public class NightlightBlock extends Block {
 
 	private static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 6, 13);
 
-	public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand,
-			BlockHitResult pHit) {
-		if (!pLevel.isClientSide() && pHand == InteractionHand.MAIN_HAND) {
-			boolean currentState = pState.getValue(CLICKED);
-			pLevel.setBlock(pPos, pState.setValue(CLICKED, !currentState), 3);
+	@Override protected InteractionResult useItemOn(ItemStack itemStack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+		if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
+			boolean currentState = state.getValue(CLICKED);
+			level.setBlock(pos, state.setValue(CLICKED, !currentState), 3);
 
-			float f = !pState.getValue(CLICKED) ? 0.6F : 0.5F;
-			pLevel.playSound(null, pPos, (pState.getValue(CLICKED) == true) ? SoundEvents.STONE_BUTTON_CLICK_OFF
-					: SoundEvents.STONE_BUTTON_CLICK_ON, SoundSource.BLOCKS, 0.3F, f);
+			float f = !state.getValue(CLICKED) ? 0.6F : 0.5F;
+			level.playSound(null, pos, (state.getValue(CLICKED) == true) ? SoundEvents.STONE_BUTTON_CLICK_OFF : SoundEvents.STONE_BUTTON_CLICK_ON, SoundSource.BLOCKS, 0.3F, f);
 		}
 		return InteractionResult.SUCCESS;
 	}

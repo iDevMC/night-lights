@@ -3,7 +3,7 @@
 	"parent": "nightlights:block/night_light_mushroom",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "nightlights:blocks/mushroom_black",
-		"particle": "nightlights:blocks/mushroom_black"
+		"2": "nightlights:block/mushroom_black",
+		"particle": "nightlights:block/mushroom_black"
 	}
 }

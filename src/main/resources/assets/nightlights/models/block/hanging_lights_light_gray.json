@@ -3,8 +3,8 @@
 	"parent": "hanging_lights_light_gray",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "nightlights:blocks/hanging_lights_light_gray",
-		"particle": "nightlights:blocks/hanging_lights_light_gray"
+		"0": "nightlights:block/hanging_lights_light_gray",
+		"particle": "nightlights:block/hanging_lights_light_gray"
 	},
 	"elements": [
 		{

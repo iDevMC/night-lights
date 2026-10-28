@@ -3,8 +3,8 @@
 	"parent": "fairy_lights_light_blue",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "nightlights:blocks/fairy_lights_light_blue",
-		"particle": "nightlights:blocks/fairy_lights_light_blue"
+		"1": "nightlights:block/fairy_lights_light_blue",
+		"particle": "nightlights:block/fairy_lights_light_blue"
 	},
 	"elements": [
 		{
