@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "nightlights",
+	"version": "${version}",
+	"name": "Night Lights",
+	"description": "Brighten up your builds with a variety of new decorative light sources!",
+	"authors": [
+		"samgj15",
+		"Joosh",
+		"mykelsarchive"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/night-lights/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.samgj15.nightlights.NightLights"
+		],
+		"fabric-datagen": [
+			"com.samgj15.nightlights.NightLightsDataGenerator"
+		]
+	},
+	"mixins": [
+		"nightlights.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
